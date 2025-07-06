@@ -43,6 +43,9 @@ const sidebars = {
       items: [
         'resources/troubleshooting',
         'resources/glossary',
+        'resources/teacher-guide',
+        'resources/templates',
+        'resources/workshop-development-guide',
       ],
     },
   ],
