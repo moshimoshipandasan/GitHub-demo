@@ -41,6 +41,7 @@ const sidebars = {
       type: 'category',
       label: 'リソース',
       items: [
+        'resources/what-is-github',
         'resources/troubleshooting',
         'resources/glossary',
         'resources/teacher-guide',
