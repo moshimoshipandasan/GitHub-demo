@@ -9,7 +9,7 @@ GitHub/Gitの基本操作を実践的に学ぶワークショップのドキュ�
 ## 📚 コンテンツ
 
 - **基礎編（Day 1-6）**: GitHubの基本から始めて、段階的にスキルアップ
-- **応用編**: Google Apps Script連携、GitHub Classroom、高度な活用法
+- **応用編**: Google Apps Script 連携、GitHub Classroom、高度な活用法
 - **リソース**: トラブルシューティング、用語集
 
 ## 🚀 ローカルでの起動方法
