@@ -1,7 +1,11 @@
 ---
 slug: workshop-launch
 title: GitHub実践ワークショップサイトをリリースしました！
-authors: [docusaurus]
+authors:
+  - name: Workshop Team
+    title: GitHub Workshop開発チーム
+    url: https://github.com/itoksk
+    image_url: https://github.com/itoksk.png
 tags: [github, workshop, docusaurus, pteranodon, release]
 ---
 
