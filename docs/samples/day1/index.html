@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>私の最初のページ</title>
+</head>
+<body>
+    <h1>こんにちは！</h1>
+    <p>GitHubで公開した私の最初のウェブページです。</p>
+    <p>今日の日付: <span id="date"></span></p>
+    
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('ja-JP');
+    </script>
+</body>
+</html>

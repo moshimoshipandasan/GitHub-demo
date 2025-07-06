@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODOリスト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .todo-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input {
+            width: 70%;
+            padding: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>私のTODOリスト</h1>
+    
+    <div>
+        <input type="text" id="newTodo" placeholder="新しいタスクを入力">
+        <button onclick="addTodo()">追加</button>
+    </div>
+    
+    <div id="todoList">
+        <div class="todo-item">GitHubの使い方を学ぶ</div>
+        <div class="todo-item">最初のコミットをする</div>
+    </div>
+    
+    <script>
+        function addTodo() {
+            const input = document.getElementById('newTodo');
+            const todoText = input.value;
+            
+            if (todoText) {
+                const todoList = document.getElementById('todoList');
+                const newItem = document.createElement('div');
+                newItem.className = 'todo-item';
+                newItem.textContent = todoText;
+                todoList.appendChild(newItem);
+                
+                input.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
