@@ -39,6 +39,26 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'テトリスワークショップ',
+      items: [
+        'tetris-workshop/intro',
+        'tetris-workshop/programming-exercises',
+        'tetris-workshop/gesture-customization',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ライセンス',
+      items: [
+        'license/intro',
+        'license/choosing-license',
+        'license/adding-license',
+        'license/license-details',
+        'license/education-guide',
+      ],
+    },
+    {
+      type: 'category',
       label: 'リソース',
       items: [
         'resources/what-is-github',

@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'GitHub実践ワークショップ',
   tagline: 'GitHubを使いこなして、世界に作品を発信しよう！',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/logo.png',
   trailingSlash: false,
 
   // Set the production url of your site here
@@ -70,7 +70,7 @@ const config = {
         title: 'GitHub Workshop',
         logo: {
           alt: 'GitHub Workshop Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
