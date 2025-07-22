@@ -15,38 +15,14 @@ GitHubのプロフィールREADMEは、あなたの個性を表現する絶好�
 
 GitHubのユーザー名と同じ名前のリポジトリを作成し、そこにREADME.mdを置くと、あなたのプロフィールページに表示されます。これを使って、自己紹介や実績、スキルなどを創造的に表現できます。
 
-## 草を食べるヘビちゃんの実装
+## 草を食べるヘビちゃんを作ってみよう！
 
 GitHubの貢献グラフ（通称「草」）を使った面白い実装として、**草を食べるヘビちゃん**があります。これは、あなたのGitHub活動をゲームのスネークゲームのように表示する楽しい機能です。
 
-### 実装方法
+実装方法は、こちらの記事で詳しく解説されています：
+[【GitHub】READMEをオシャレにできるツールたち](https://qiita.com/Keichan_15/items/7d0595369d6b6e321ede)
 
-1. **GitHub Actionsを使用**
-   - 定期的に貢献グラフを取得
-   - SVGアニメーションを生成
-   - READMEに自動的に反映
-
-2. **必要なステップ**
-   ```yaml
-   # .github/workflows/snake.yml
-   name: Generate Snake
-
-   on:
-     schedule:
-       - cron: "0 */12 * * *"
-     workflow_dispatch:
-
-   jobs:
-     build:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: Platane/snk@v3
-           with:
-             github_user_name: ${{ github.repository_owner }}
-             outputs: |
-               dist/github-snake.svg
-               dist/github-snake-dark.svg?palette=github-dark
-   ```
+ぜひこの記事を見て、あなたのプロフィールにも動く蛇を実装してみてください！きっと訪問者の目を引くこと間違いなしです。
 
 ## その他のおもしろいREADME要素
 
@@ -90,6 +66,6 @@ GitHubプロフィールREADMEは、技術的なスキルと創造性を同時�
 
 ## 参考リンク
 
-- [GitHubプロフィールREADMEジェネレーター集](https://qiita.com/Keichan_15/items/7d0595369d6b6e321ede)
+- [【GitHub】READMEをオシャレにできるツールたち](https://qiita.com/Keichan_15/items/7d0595369d6b6e321ede) - 草を食べるヘビちゃんの実装方法も載っています！
 - [GitHub Actions公式ドキュメント](https://docs.github.com/ja/actions)
 - [おもしろREADMEのアイデア集](https://github.com/topics/github-profile-readme)
