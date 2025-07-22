@@ -32,14 +32,14 @@ Google Apps Script（GAS）は、Googleのサービスを自動化できるプ�
 ### 2. Node.jsのインストール
 ```bash
 # Windowsの場合
-# https://nodejs.org/ からダウンロード
+# https://nodejs.org/ からLTS版をダウンロード
 
 # Macの場合（Homebrewを使用）
 brew install node
 
 # インストール確認
-node --version
-npm --version
+node --version  # v18.0.0以上推奨
+npm --version   # v9.0.0以上推奨
 ```
 
 ### 3. claspのインストール
@@ -50,6 +50,10 @@ npm install -g @google/clasp
 # インストール確認
 clasp --version
 ```
+
+:::tip 開発環境別の詳細設定
+VSCode、GitHub Codespaces、Cursorなど、各開発環境での詳しい設定方法は[claspガイド](./clasp-guide.md)をご覧ください。
+:::
 
 ## 📝 実践：2つの簡単なプロジェクト
 
@@ -385,6 +389,10 @@ function doGet() {
 1. [Google Apps Script API設定](https://script.google.com/home/usersettings)
 2. 「Google Apps Script API」をONに切り替え
 
+:::warning 重要
+この設定を忘れると、claspでエラーが発生します。必ずONにしてください。
+:::
+
 #### 2-2. claspでログイン
 ```bash
 # Googleアカウントでログイン
@@ -393,6 +401,13 @@ clasp login
 # ブラウザが開いて認証画面が表示される
 # 「許可」をクリック
 ```
+
+:::tip リモート環境でのログイン
+GitHub Codespacesや SSH接続の場合：
+```bash
+clasp login --no-localhost
+```
+:::
 
 #### 2-3. プロジェクトをクローン
 1. GASエディタでプロジェクトIDを確認
@@ -449,6 +464,13 @@ clasp push
 # ブラウザでGASエディタを開く
 clasp open
 ```
+
+:::info ターミナルからの実行
+これらのコマンドは、どのエディタのターミナルからでも実行できます：
+- VSCode: 統合ターミナル (Cmd/Ctrl + `)
+- Cursor: 統合ターミナル
+- GitHub Codespaces: ブラウザ内ターミナル
+:::
 
 3. GitHubにコミット
 ```bash
@@ -534,8 +556,16 @@ function measureTime() {
 - ✅ Webアプリ（オセロゲーム）の作成方法を学んだ
 - ✅ claspを使ったローカル開発環境の構築
 - ✅ GitHubでのバージョン管理
+- ✅ ターミナルからのGAS操作
 
-これで、GASで楽しいプロジェクトを作成し、GitHubで管理できるようになりました！
+これで、GASで楽しいプロジェクトを作成し、お気に入りのエディタとGitHubで管理できるようになりました！
+
+### 🚀 次のステップ
+
+より高度な開発を目指す方は：
+- [claspを使ったGAS開発環境構築ガイド](./clasp-guide.md)で詳細な設定方法を学ぶ
+- TypeScriptでの開発に挑戦
+- CI/CDパイプラインの構築
 
 ---
 

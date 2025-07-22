@@ -33,6 +33,7 @@ const sidebars = {
       label: '応用編',
       items: [
         'advanced/gas-intro',
+        'advanced/clasp-guide',
         'advanced/classroom-teacher',
         'advanced/github-tips',
       ],
