@@ -71,6 +71,7 @@ const config = {
         logo: {
           alt: 'GitHub Workshop Logo',
           src: 'img/logo.png',
+          srcDark: 'img/logo-dark.png',
         },
         items: [
           {
