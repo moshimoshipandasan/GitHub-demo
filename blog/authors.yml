@@ -3,3 +3,9 @@ docusaurus:
   title: Maintainer of Docusaurus
   url: https://github.com/facebook/docusaurus
   image_url: https://github.com/docusaurus.png
+
+admin:
+  name: GitHub Workshop Admin
+  title: ワークショップ管理者
+  url: https://github.com/itoksk
+  image_url: https://github.com/itoksk.png
