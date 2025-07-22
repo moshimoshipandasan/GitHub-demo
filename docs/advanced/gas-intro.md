@@ -13,11 +13,10 @@ Google Apps Script（GAS）をGitHubで管理できるようになり、バー�
 Google Apps Script（GAS）は、Googleのサービスを自動化できるプログラミング環境です。
 
 ### GASでできること
-- 📊 **スプレッドシートの自動化** - 成績集計、データ処理
-- 📧 **Gmail連携** - 自動メール送信、フィルタリング
-- 📅 **カレンダー連携** - イベント自動作成、リマインダー
-- 📝 **フォーム連携** - 回答の自動処理、通知
-- 🌐 **Webアプリ作成** - 簡単なWebサービス
+- **メール送信** - 自動メール送信、HTMLメール作成
+- **Webアプリ作成** - 簡単なWebサービス、ゲーム
+- **自動化処理** - 定期実行、データ処理
+- **API連携** - 外部サービスとの連携
 
 ### なぜGitHubで管理するの？
 - ✅ **バージョン管理** - 変更履歴を追跡
@@ -52,50 +51,333 @@ npm install -g @google/clasp
 clasp --version
 ```
 
-## 📝 実践：初めてのGASプロジェクト
+## 📝 実践：2つの簡単なプロジェクト
 
-### Step 1: Google Apps Scriptプロジェクト作成
+### プロジェクト1: HTMLメールを送信しよう！
+
+#### Step 1: Google Apps Scriptプロジェクト作成
 
 1. [Google Apps Script](https://script.google.com) にアクセス
 2. 「新しいプロジェクト」をクリック
-3. プロジェクト名を「My First GAS Project」に変更
+3. プロジェクト名を「HTML Mail Sender」に変更
 4. 以下のコードを入力：
 
 ```javascript
 // コード.gs
-function myFunction() {
-  console.log('Hello from Google Apps Script!');
+function sendBeautifulEmail() {
+  const recipient = Session.getActiveUser().getEmail();
+  const subject = "🎉 GASから送信したHTMLメール！";
   
-  // スプレッドシートを作成
-  const spreadsheet = SpreadsheetApp.create('GASで作ったスプレッドシート');
-  const sheet = spreadsheet.getActiveSheet();
+  // HTMLメールの内容
+  const htmlBody = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+          }
+          .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+          }
+          h1 {
+            color: #4285f4;
+            text-align: center;
+          }
+          .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4285f4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
+            width: 200px;
+            text-align: center;
+          }
+          .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 30px;
+            font-size: 14px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1>こんにちは！</h1>
+          <p>これは<strong>Google Apps Script</strong>から送信されたHTMLメールです。</p>
+          <p>きれいなデザインのメールを簡単に送ることができます！</p>
+          <a href="https://github.com" class="button">GitHubを見る</a>
+          <div class="footer">
+            <p>送信日時: ${new Date().toLocaleString('ja-JP')}</p>
+            <p>Powered by Google Apps Script</p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `;
   
-  // データを書き込み
-  sheet.getRange('A1').setValue('こんにちは！');
-  sheet.getRange('A2').setValue('GASから書き込みました');
-  sheet.getRange('A3').setValue(new Date());
+  // メールを送信
+  GmailApp.sendEmail(recipient, subject, "HTMLメールです", {
+    htmlBody: htmlBody
+  });
   
-  // URLをログに出力
-  console.log('スプレッドシートURL: ' + spreadsheet.getUrl());
+  console.log(`メールを送信しました: ${recipient}`);
 }
 
-// 毎日実行する関数の例
-function dailyTask() {
-  const today = new Date();
-  const message = `今日は${today.getMonth() + 1}月${today.getDate()}日です`;
-  
-  // 自分にメールを送信
+// テスト用の簡単なメール
+function sendSimpleEmail() {
+  const email = Session.getActiveUser().getEmail();
   GmailApp.sendEmail(
-    Session.getActiveUser().getEmail(),
-    '今日の日付',
-    message
+    email,
+    "テストメール",
+    "これはGASから送信したテストメールです！\n\n送信成功！"
   );
 }
 ```
 
 5. 「保存」（Ctrl+S または Cmd+S）
-6. 「実行」ボタンをクリック
+6. `sendBeautifulEmail`関数を選択して「実行」ボタンをクリック
 7. 権限を承認（初回のみ）
+8. メールが届いたか確認しよう！
+
+### プロジェクト2: シンプルなオセロゲームを作ろう！
+
+#### オセロゲームのWebアプリ作成
+
+1. 新しいプロジェクトを作成（プロジェクト名: "Othello Game"）
+2. 以下の2つのファイルを作成：
+
+**コード.gs:**
+```javascript
+function doGet() {
+  return HtmlService.createHtmlOutputFromFile('index')
+    .setTitle('オセロゲーム')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+```
+
+**index.html:** (新規作成: ファイル → 新規作成 → HTML)
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #2c3e50;
+    }
+    .game-container {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    h1 {
+      color: #27ae60;
+      margin-bottom: 20px;
+    }
+    .board {
+      display: inline-block;
+      background-color: #27ae60;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .row {
+      display: flex;
+    }
+    .cell {
+      width: 50px;
+      height: 50px;
+      background-color: #27ae60;
+      border: 1px solid #229954;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .cell:hover {
+      background-color: #229954;
+    }
+    .piece {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: all 0.3s;
+    }
+    .black {
+      background-color: #2c3e50;
+    }
+    .white {
+      background-color: #ecf0f1;
+      border: 2px solid #bdc3c7;
+    }
+    .info {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .reset-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .reset-btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎮 シンプルオセロ</h1>
+    <div class="board" id="board"></div>
+    <div class="info">
+      <p>現在のターン: <span id="current-player">⚫ 黒</span></p>
+      <p>黒: <span id="black-count">2</span> | 白: <span id="white-count">2</span></p>
+    </div>
+    <button class="reset-btn" onclick="initGame()">ゲームをリセット</button>
+  </div>
+  
+  <script>
+    let board = [];
+    let currentPlayer = 'black';
+    const BOARD_SIZE = 8;
+    
+    function initGame() {
+      board = Array(BOARD_SIZE).fill(null).map(() => Array(BOARD_SIZE).fill(null));
+      // 初期配置
+      board[3][3] = 'white';
+      board[3][4] = 'black';
+      board[4][3] = 'black';
+      board[4][4] = 'white';
+      currentPlayer = 'black';
+      renderBoard();
+      updateInfo();
+    }
+    
+    function renderBoard() {
+      const boardElement = document.getElementById('board');
+      boardElement.innerHTML = '';
+      
+      for (let i = 0; i < BOARD_SIZE; i++) {
+        const row = document.createElement('div');
+        row.className = 'row';
+        
+        for (let j = 0; j < BOARD_SIZE; j++) {
+          const cell = document.createElement('div');
+          cell.className = 'cell';
+          cell.onclick = () => placePiece(i, j);
+          
+          if (board[i][j]) {
+            const piece = document.createElement('div');
+            piece.className = `piece ${board[i][j]}`;
+            cell.appendChild(piece);
+          }
+          
+          row.appendChild(cell);
+        }
+        boardElement.appendChild(row);
+      }
+    }
+    
+    function placePiece(row, col) {
+      if (board[row][col]) return;
+      
+      const flipped = getFlippedPieces(row, col, currentPlayer);
+      if (flipped.length === 0) return;
+      
+      board[row][col] = currentPlayer;
+      flipped.forEach(([r, c]) => {
+        board[r][c] = currentPlayer;
+      });
+      
+      currentPlayer = currentPlayer === 'black' ? 'white' : 'black';
+      renderBoard();
+      updateInfo();
+    }
+    
+    function getFlippedPieces(row, col, player) {
+      const directions = [
+        [-1, -1], [-1, 0], [-1, 1],
+        [0, -1],           [0, 1],
+        [1, -1],  [1, 0],  [1, 1]
+      ];
+      
+      const flipped = [];
+      const opponent = player === 'black' ? 'white' : 'black';
+      
+      for (const [dx, dy] of directions) {
+        const temp = [];
+        let x = row + dx;
+        let y = col + dy;
+        
+        while (x >= 0 && x < BOARD_SIZE && y >= 0 && y < BOARD_SIZE && board[x][y] === opponent) {
+          temp.push([x, y]);
+          x += dx;
+          y += dy;
+        }
+        
+        if (x >= 0 && x < BOARD_SIZE && y >= 0 && y < BOARD_SIZE && board[x][y] === player && temp.length > 0) {
+          flipped.push(...temp);
+        }
+      }
+      
+      return flipped;
+    }
+    
+    function updateInfo() {
+      let blackCount = 0;
+      let whiteCount = 0;
+      
+      for (let i = 0; i < BOARD_SIZE; i++) {
+        for (let j = 0; j < BOARD_SIZE; j++) {
+          if (board[i][j] === 'black') blackCount++;
+          else if (board[i][j] === 'white') whiteCount++;
+        }
+      }
+      
+      document.getElementById('black-count').textContent = blackCount;
+      document.getElementById('white-count').textContent = whiteCount;
+      document.getElementById('current-player').textContent = 
+        currentPlayer === 'black' ? '⚫ 黒' : '⚪ 白';
+    }
+    
+    // ゲーム開始
+    initGame();
+  </script>
+</body>
+</html>
+```
+
+3. ファイルを保存
+4. デプロイ → 新しいデプロイ
+5. 種類: 「ウェブアプリ」を選択
+6. 説明: 「オセロゲーム v1」
+7. 実行者: 「自分」
+8. アクセス権: 「全員」
+9. 「デプロイ」をクリック
+10. 表示されたURLにアクセスして遊んでみよう！
 
 ### Step 2: claspでローカル環境と連携
 
@@ -159,41 +441,7 @@ git push -u origin main
 code .
 ```
 
-2. 新しい関数を追加（`コード.js`を編集）
-```javascript
-// スプレッドシートに成績を記録する関数
-function recordGrades() {
-  const spreadsheet = SpreadsheetApp.openById('YOUR_SPREADSHEET_ID');
-  const sheet = spreadsheet.getSheetByName('成績');
-  
-  // ヘッダーを設定
-  const headers = ['名前', '国語', '数学', '英語', '合計', '平均'];
-  sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
-  
-  // サンプルデータ
-  const students = [
-    ['田中太郎', 85, 90, 78],
-    ['鈴木花子', 92, 88, 95],
-    ['佐藤次郎', 78, 85, 82]
-  ];
-  
-  // データを書き込み
-  students.forEach((student, index) => {
-    const row = index + 2;
-    const total = student[1] + student[2] + student[3];
-    const average = total / 3;
-    
-    sheet.getRange(row, 1, 1, 6).setValues([[
-      student[0], student[1], student[2], student[3], 
-      total, Math.round(average * 10) / 10
-    ]]);
-  });
-  
-  console.log('成績を記録しました');
-}
-```
-
-3. GASにアップロード
+2. 編集した内容をGASにアップロード
 ```bash
 # 変更をGASにプッシュ
 clasp push
@@ -202,122 +450,49 @@ clasp push
 clasp open
 ```
 
-4. GitHubにコミット
+3. GitHubにコミット
 ```bash
 git add .
-git commit -m "成績記録機能を追加"
+git commit -m "HTMLメール送信機能を追加"
 git push
 ```
 
-## 🎓 学校での活用例
+## 🎯 練習問題
 
-### 1. 出欠管理システム
+### 練習1: カスタムメールを送ってみよう
+上記のHTMLメール送信コードを改造して：
+- 自分の好きな色に変更
+- 画像を追加（`<img src="URL">`）
+- ボタンのリンク先を変更
+
+### 練習2: オセロゲームを改良しよう
+- 背景色やピースの色を変更
+- 勝敗判定を追加
+- サウンドエフェクトを追加（HTML5 Audio）
+- スコアの保存機能
+
+## 💡 開発のコツ
+
+### 1. デバッグ方法
 ```javascript
-function takeAttendance() {
-  const form = FormApp.create('本日の出欠確認');
+// console.logを活用
+function debug() {
+  console.log('処理開始');
+  const data = getData();
+  console.log('取得したデータ:', data);
+}
+```
+
+### 2. 実行時間の計測
+```javascript
+function measureTime() {
+  const start = new Date();
   
-  // 質問を追加
-  form.addTextItem()
-    .setTitle('学籍番号')
-    .setRequired(true);
-    
-  form.addMultipleChoiceItem()
-    .setTitle('出欠')
-    .setChoices([
-      form.createChoice('出席'),
-      form.createChoice('欠席'),
-      form.createChoice('遅刻')
-    ])
-    .setRequired(true);
-    
-  // フォームのURLを取得
-  console.log('出欠フォームURL: ' + form.getPublishedUrl());
-}
-```
-
-### 2. 自動リマインダー
-```javascript
-function setReminder() {
-  // 明日の予定をメールで通知
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1);
+  // 処理
+  heavyProcess();
   
-  const events = CalendarApp.getDefaultCalendar()
-    .getEventsForDay(tomorrow);
-    
-  if (events.length > 0) {
-    let message = '明日の予定：\n\n';
-    events.forEach(event => {
-      message += `・${event.getTitle()} (${event.getStartTime().toLocaleTimeString()})\n`;
-    });
-    
-    GmailApp.sendEmail(
-      Session.getActiveUser().getEmail(),
-      '明日の予定リマインダー',
-      message
-    );
-  }
-}
-```
-
-## 💡 ベストプラクティス
-
-### 1. 設定値は別ファイルに
-```javascript
-// config.js
-const CONFIG = {
-  SPREADSHEET_ID: 'YOUR_SPREADSHEET_ID',
-  EMAIL_TO: 'teacher@school.edu',
-  TIMEZONE: 'Asia/Tokyo'
-};
-
-// main.js
-function main() {
-  const spreadsheet = SpreadsheetApp.openById(CONFIG.SPREADSHEET_ID);
-  // ...
-}
-```
-
-### 2. エラーハンドリング
-```javascript
-function safeExecute() {
-  try {
-    // メイン処理
-    processData();
-  } catch (error) {
-    console.error('エラーが発生しました:', error);
-    // 管理者に通知
-    GmailApp.sendEmail(
-      'admin@example.com',
-      'GASエラー通知',
-      `エラー: ${error.message}\n\nスタックトレース: ${error.stack}`
-    );
-  }
-}
-```
-
-### 3. 定期実行の設定
-```javascript
-// トリガーを設定する関数
-function setTriggers() {
-  // 既存のトリガーを削除
-  ScriptApp.getProjectTriggers().forEach(trigger => {
-    ScriptApp.deleteTrigger(trigger);
-  });
-  
-  // 毎日朝9時に実行
-  ScriptApp.newTrigger('dailyTask')
-    .timeBased()
-    .everyDays(1)
-    .atHour(9)
-    .create();
-    
-  // 毎週月曜日に実行
-  ScriptApp.newTrigger('weeklyReport')
-    .timeBased()
-    .onWeekDay(ScriptApp.WeekDay.MONDAY)
-    .atHour(8)
-    .create();
+  const end = new Date();
+  console.log(`実行時間: ${end - start}ms`);
 }
 ```
 
@@ -355,12 +530,12 @@ function setTriggers() {
 ## 🎊 まとめ
 
 今日学んだこと：
-- ✅ GASの基本的な使い方
+- ✅ HTMLメールの送信方法を学んだ
+- ✅ Webアプリ（オセロゲーム）の作成方法を学んだ
 - ✅ claspを使ったローカル開発環境の構築
 - ✅ GitHubでのバージョン管理
-- ✅ 実用的なスクリプトの作成
 
-これで、学校業務の自動化をGitHubで管理できるようになりました！
+これで、GASで楽しいプロジェクトを作成し、GitHubで管理できるようになりました！
 
 ---
 
