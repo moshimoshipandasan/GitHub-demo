@@ -7,13 +7,11 @@ description: GitHubリポジトリにライセンスを追加する様々な方�
 
 # ライセンスの追加方法
 
-## 📋 目次
+## 📋 このページの内容
 
-1. [新規リポジトリ作成時に追加](#新規リポジトリ作成時)
-2. [既存リポジトリに追加（GitHub UI）](#既存リポジトリにgithub-uiで追加)
-3. [コマンドラインで追加](#コマンドラインで追加)
-4. [複数ファイルへの適用](#複数ファイルへの適用)
-5. [特殊なケース](#特殊なケース)
+1. [新しいリポジトリを作る時](#新規リポジトリ作成時)
+2. [すでにあるリポジトリに追加](#既存リポジトリにgithub-uiで追加)
+3. [コマンドで追加（上級者向け）](#コマンドラインで追加)
 
 ## 🆕 新規リポジトリ作成時
 
@@ -26,16 +24,13 @@ description: GitHubリポジトリにライセンスを追加する様々な方�
 
 ### Step 2: ライセンスを選択
 
-```mermaid
-graph LR
-    A[Repository name入力] --> B[Description入力]
-    B --> C[Public/Private選択]
-    C --> D[Initialize this repository with:]
-    D --> E[Add a README file ✓]
-    D --> F[Add .gitignore]
-    D --> G[Choose a license ✓]
-    G --> H[ライセンス選択]
-```
+**リポジトリ作成の流れ：**
+1. Repository name（リポジトリ名）を入力
+2. Description（説明）を入力（省略可）
+3. Public（公開）まPrivate（非公開）を選ぶ
+4. 「Add a README file」にチェック
+5. 「Choose a license」をクリック
+6. ドロップダウンからライセンスを選ぶ
 
 ### Step 3: ドロップダウンから選択
 
@@ -54,8 +49,8 @@ graph LR
 3. "Create repository" をクリック
 ```
 
-:::tip プロのヒント
-リポジトリ作成時にライセンスを追加すると、最初のコミットに含まれるため、履歴がきれいに保たれます。
+:::tip おすすめ
+最初からライセンスを追加しておくと、あとで楽です！
 :::
 
 ## 🔧 既存リポジトリにGitHub UIで追加
@@ -84,21 +79,13 @@ my-repository/
 
 ### 画面の流れ
 
-```mermaid
-sequenceDiagram
-    participant U as ユーザー
-    participant G as GitHub UI
-    participant R as リポジトリ
-    
-    U->>G: "Create new file"クリック
-    G->>U: ファイル名入力画面
-    U->>G: "LICENSE"と入力
-    G->>U: "Choose a license template"表示
-    U->>G: テンプレート選択
-    G->>U: プレビュー表示
-    U->>G: "Commit new file"
-    G->>R: LICENSEファイル追加
-```
+**操作の流れ：**
+1. 「Create new file」ボタンをクリック
+2. ファイル名に「LICENSE」と入力
+3. 「Choose a license template」ボタンが出る
+4. 好きなライセンスを選ぶ（迷ったらMIT！）
+5. 年と名前を確認
+6. 「Commit new file」で完了！
 
 ## 💻 コマンドラインで追加
 
@@ -143,33 +130,18 @@ git commit -m "Add MIT license"
 git push origin main
 ```
 
-### wget を使った方法
+### ライセンステキストをコピーする方法
 
-```bash
-# MIT License
-wget https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt -O LICENSE
+**MITライセンスのテキスト：**
+[Choose a License](https://choosealicense.com/licenses/mit/) からコピーできます。
 
-# Apache 2.0
-wget https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/apache-2.0.txt -O LICENSE
+### 名前と年を入れる
 
-# GPL v3
-wget https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/gpl-3.0.txt -O LICENSE
-```
-
-### 年と名前の置換
-
-```bash
-# 現在の年を自動で入力
-YEAR=$(date +%Y)
-NAME="Taro Yamada"
-
-# sedで置換（Mac/Linux）
-sed -i "s/\[year\]/$YEAR/g" LICENSE
-sed -i "s/\[fullname\]/$NAME/g" LICENSE
-
-# Windowsの場合（PowerShell）
-(Get-Content LICENSE) -replace '\[year\]', '2024' -replace '\[fullname\]', 'Taro Yamada' | Set-Content LICENSE
-```
+**手動で編集：**
+1. LICENSEファイルを開く
+2. `[year]` を今年（例：2024）に変える
+3. `[fullname]` をあなたの名前に変える
+4. 保存して完了！
 
 ## 📁 複数ファイルへの適用
 

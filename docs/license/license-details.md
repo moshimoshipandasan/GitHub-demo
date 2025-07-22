@@ -25,43 +25,26 @@ description: 各オープンソースライセンスの特徴、条件、使用�
 ❌ **責任：**
 - 作者は一切の責任を負わない
 
-### ライセンス全文（日本語訳付き）
+### MITライセンスってどんな内容？
 
+**かんたんに言うと：**
+- 🆗 このソフトウェアは無料で自由に使えます
+- 🔄 コピー、改造、販売もOK
+- 📝 ただし、著作権表示は残してください
+- ⚠️ 何か問題が起きても作者は責任を負いません
+
+**実際のMITライセンスの例：**
 ```
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2024 山田太郎
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+以下の条件で、このソフトウェアを自由に使えます：
+- 著作権表示を含めること
+- このライセンス文を含めること
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-【日本語訳】
-本ソフトウェアおよび関連文書ファイル（以下「ソフトウェア」）の複製を取得する
-すべての人に対し、ソフトウェアを無制限に扱うことを無償で許可します。これには、
-ソフトウェアの複製を使用、複写、変更、結合、掲載、頒布、サブライセンス、
-および/または販売する権利、およびソフトウェアを提供する相手に同じことを許可する
-権利も無制限に含まれます。
-
-上記の著作権表示および本許諾表示を、ソフトウェアのすべての複製または
-重要な部分に記載するものとします。
-
-ソフトウェアは「現状のまま」で、明示であるか暗黙であるかを問わず、
-何らの保証もなく提供されます。
+ソフトウェアは「現状のまま」で提供され、
+何の保証もありません。
 ```
 
 ### 使用例
@@ -100,17 +83,15 @@ MITライセンスより詳細で、特許に関する条項を含む。大企�
 
 ### 重要な条項
 
-#### 特許権の許諾（第3条）
-```
-各貢献者は、あなたに対し、永続的で世界規模の非独占的な
-無料のロイヤリティフリーの取消不能な特許ライセンスを許諾します。
-```
+### Apache 2.0の特徴
 
-#### 変更の明記（第4条）
-```
-あなたが変更したファイルには、あなたが変更したことを示す
-目立つ通知を付けなければなりません。
-```
+**MITとの違い：**
+- 🔒 特許（パテント）も保護される
+- 📋 変更した場所を記録する必要がある
+- 📄 NOTICEファイルがあればそれも残す
+
+**かんたんに言うと：**
+「MITよりしっかりしたライセンスで、企業向け」
 
 ### 使用例
 - **Android** - Googleのモバイルプラットフォーム
@@ -153,28 +134,21 @@ University of Illinois at Urbana-Champaign.
 ❌ **責任：**
 - 作者は責任を負わない
 
-### コピーレフトの仕組み
+### GPLのしくみ（コピーレフト）
 
-```mermaid
-graph TD
-    A[元のGPLコード] --> B[あなたの派生物]
-    B --> C{配布する？}
-    C -->|はい| D[ソースコード公開必須]
-    C -->|いいえ| E[公開不要]
-    D --> F[GPLライセンス必須]
-```
+**かんたんに言うと：**
+1. GPLのコードを使ったら
+2. あなたのコードもGPLになる
+3. 配布するならソースコードも公開必須
 
-### GPLの「感染性」
-```javascript
-// gpl-library.js (GPL v3)
-export function gplFunction() {
-    return "GPL licensed";
-}
+これを「感染性」と呼びます。
 
-// your-app.js
-import { gplFunction } from './gpl-library.js';
-// このアプリ全体がGPL v3になる！
-```
+### GPLの例
+
+**注意：**
+GPLのライブラリを一つでも使うと、あなたのプロジェクト全体がGPLになります！
+
+これが「GPLは難しい」と言われる理由です。
 
 ### 使用例
 - **Linux Kernel** - オペレーティングシステムの核
@@ -182,30 +156,25 @@ import { gplFunction } from './gpl-library.js';
 - **GIMP** - 画像編集ソフト
 - **Git** - バージョン管理システム
 
-## 🎨 Creative Commons ライセンス
+## 🎨 Creative Commons（クリエイティブコモンズ）
 
-### 概要
-主にクリエイティブ作品（文書、画像、音楽など）向けのライセンス体系。
+### コード以外の作品用
 
-### ライセンスの種類
+文書、画像、動画、音楽などに使います。
 
-#### CC0 (パブリックドメイン)
-```
-完全に自由。著作権を放棄。
-✅ 商用利用 ✅ 改変 ✅ 再配布
-❌ 条件なし
-```
+### よく使われるCCライセンス
 
-#### CC BY (表示)
-```
-クレジット表示のみ必要
-✅ 商用利用 ✅ 改変 ✅ 再配布
-⚠️ 著作者表示
-```
+**CC0（完全自由）**
+- 🆓 著作権を放棄
+- 👍 何でもOK、名前を書く必要もなし
 
-#### CC BY-SA (表示-継承)
-```
-クレジット表示＋同一ライセンス
+**CC BY（名前を書けばOK）**  
+- 📝 作者の名前を書く
+- 👍 それ以外は自由
+
+**CC BY-NC（商用利用禁止）**
+- 📝 作者の名前を書く
+- 🚫 お金を稼ぐ目的では使えない
 ✅ 商用利用 ✅ 改変 ✅ 再配布
 ⚠️ 著作者表示 ⚠️ 同一ライセンス
 ```
@@ -231,27 +200,27 @@ import { gplFunction } from './gpl-library.js';
 ⚠️ 著作者表示
 ```
 
-### 表示例
-```markdown
-この作品は [クリエイティブ・コモンズ 表示 4.0 国際 ライセンス](https://creativecommons.org/licenses/by/4.0/)
-の下に提供されています。
+### クレジットの書き方
+
+```
+この作品は山田太郎によるもので、CC BY 4.0ライセンスで公開されています。
 ```
 
-## 📊 ライセンス比較表
+## 📊 かんたん比較表
 
-### 基本的な権利
+### 何ができる？
 
-| ライセンス | 商用利用 | 改変 | 配布 | 私的利用 | 特許許諾 |
-|----------|---------|-----|-----|---------|---------|
-| MIT | ✅ | ✅ | ✅ | ✅ | ❌ |
-| Apache 2.0 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| GPL v3 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| BSD 3-Clause | ✅ | ✅ | ✅ | ✅ | ❌ |
-| CC0 | ✅ | ✅ | ✅ | ✅ | ❌ |
+| ライセンス | 商用OK？ | 改造OK？ | 配布OK？ | 特許保護？ |
+|----------|---------|---------|---------|---------|
+| MIT | ✅ | ✅ | ✅ | ❌ |
+| Apache 2.0 | ✅ | ✅ | ✅ | ✅ |
+| GPL v3 | ✅ | ✅ | ✅ | ✅ |
+| BSD 3-Clause | ✅ | ✅ | ✅ | ❌ |
+| CC0 | ✅ | ✅ | ✅ | ❌ |
 
-### 義務と条件
+### 何をしなければいけない？
 
-| ライセンス | 著作権表示 | ライセンス表示 | ソース開示 | 同一ライセンス | 変更明記 |
+| ライセンス | 名前を書く | ライセンスを書く | コード公開 | 同じライセンス | 変更を記録 |
 |----------|-----------|--------------|-----------|--------------|---------|
 | MIT | ✅ | ✅ | ❌ | ❌ | ❌ |
 | Apache 2.0 | ✅ | ✅ | ❌ | ❌ | ✅ |
@@ -259,22 +228,19 @@ import { gplFunction } from './gpl-library.js';
 | BSD 3-Clause | ✅ | ✅ | ❌ | ❌ | ❌ |
 | CC0 | ❌ | ❌ | ❌ | ❌ | ❌ |
 
-## 🎯 使い分けガイド
+## 🎯 どれを選べばいい？
 
-### プロジェクトタイプ別推奨
+### プロジェクト別おすすめ
 
-```mermaid
-graph TD
-    A[プロジェクトタイプ] --> B[ライブラリ/フレームワーク]
-    A --> C[アプリケーション]
-    A --> D[教育/ドキュメント]
-    
-    B --> E[MIT or Apache 2.0]
-    C --> F{オープンソース維持？}
-    F -->|はい| G[GPL v3]
-    F -->|いいえ| H[MIT]
-    D --> I[CC BY or CC BY-SA]
-```
+**📚 ライブラリ、フレームワーク**
+- MITまたはApache 2.0
+
+**📱 アプリケーション**
+- みんなに公開したい → MIT
+- オープンソースを守りたい → GPL v3
+
+**🎓 教材、ドキュメント**
+- CC BYまたはCC BY-SA
 
 ### 企業での使用を考慮
 
@@ -327,14 +293,20 @@ Please contact sales@example.com for commercial licensing.
 - パブリックドメインへの献呈
 - CC0の代替
 
-## 🎓 まとめ
+## 🎓 かんたんまとめ
 
-1. **MIT** - 最も自由で簡単
-2. **Apache 2.0** - 企業向けで安心
-3. **GPL v3** - オープンソースを守る
-4. **Creative Commons** - コード以外のコンテンツ
+### 🎆 初心者の鉄則
 
-選択に迷ったら、プロジェクトの目的と将来の使用方法を考慮して選びましょう。
+**コードの場合：**
+1. **迷ったらMIT** - 一番かんたん
+2. **企業で使うならApache 2.0** - 特許も守れる
+3. **GPLは慎重に** - 「感染」するので注意
+
+**画像や文書の場合：**
+- **CC BY** - 名前を書けばOK
+- **CC0** - 完全自由
+
+とにかく、**ライセンスなしより、何かつける方がいい**！
 
 ## 📖 次のステップ
 
