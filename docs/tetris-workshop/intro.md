@@ -42,19 +42,7 @@ OSに関係なく、ブラウザだけで開発環境を構築できます。
 
 3. **プロジェクトのセットアップ**
    ```bash
-   # プロジェクトフォルダを作成
-   mkdir tetris-hand
-   cd tetris-hand
-   
-   # リポジトリをクローン
-   git clone https://github.com/itoksk/tetris-hand.git temp_clone
-   cp -r temp_clone/* .
-   cp -r temp_clone/.* . 2>/dev/null || true
-   rm -rf temp_clone
-   
-   # 依存関係をクリーンインストール
-   rm -rf node_modules package-lock.json
-   npm cache clean --force
+   # 依存関係をインストール（Codespacesは既にコードが用意されています）
    npm install
    ```
 
@@ -70,9 +58,9 @@ OSに関係なく、ブラウザだけで開発環境を構築できます。
    - 表示されるURLをクリックしてアプリケーションにアクセス
    - カメラへのアクセスを許可
 
-### 方法2: ローカル環境で実行
+### 方法2: ローカル環境で実行（フォーク済みの場合）
 
-自分のPCに直接クローンして実行する方法です。
+自分のフォークしたリポジトリをクローンして実行する方法です。
 
 1. **リポジトリをクローン**
    ```bash
@@ -93,6 +81,38 @@ OSに関係なく、ブラウザだけで開発環境を構築できます。
 4. **ブラウザでアクセス**
    - http://localhost:3000 にアクセス
    - Webカメラへのアクセスを許可
+
+### 方法3: フォークせずに直接クローン（試してみたいだけの場合）
+
+フォークせずに元のリポジトリを直接クローンして試す方法です。
+
+1. **プロジェクトフォルダを作成してクローン**
+   ```bash
+   # プロジェクトフォルダを作成
+   mkdir my-tetris-project
+   cd my-tetris-project
+   
+   # 元のリポジトリをクローン
+   git clone https://github.com/itoksk/tetris-hand.git .
+   ```
+
+2. **依存関係をインストール**
+   ```bash
+   npm install
+   ```
+
+3. **開発サーバーを起動**
+   ```bash
+   npm run dev
+   ```
+
+4. **ブラウザでアクセス**
+   - http://localhost:3000 にアクセス
+   - Webカメラへのアクセスを許可
+
+:::tip
+フォークせずに直接クローンした場合は、変更をGitHubにプッシュすることはできません。自分で改造したい場合は、先にフォークすることをおすすめします。
+:::
 
 ## 🎮 ゲームの操作方法
 
@@ -172,9 +192,8 @@ MediaPipeは手の21個のランドマーク（0-20）を追跡します：
 
 ### npmインストールエラー
 ```bash
-# キャッシュをクリアして再インストール
+# node_modulesを削除して再インストール
 rm -rf node_modules package-lock.json
-npm cache clean --force
 npm install
 ```
 
