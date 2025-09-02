@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Day 7: Gemini CLIでライブコーディング！ 🤖
+# Day 7: Gemini CLIでバイブコーディング！ 🤖
 
 ## 🎯 今日の目標
 
