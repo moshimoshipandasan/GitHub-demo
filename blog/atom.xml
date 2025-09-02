@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://moshimoshipandasan.github.io/GitHub-demo/blog</id>
+    <title>GitHub実践ワークショップ Blog</title>
+    <updated>2025-07-22T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://moshimoshipandasan.github.io/GitHub-demo/blog"/>
+    <subtitle>GitHub実践ワークショップ Blog</subtitle>
+    <icon>https://moshimoshipandasan.github.io/GitHub-demo/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[おもしろREADMEづくりでGitHubプロフィールを楽しもう！]]></title>
+        <id>https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme</id>
+        <link href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme"/>
+        <updated>2025-07-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHubのプロフィールREADMEは、あなたの個性を表現する絶好の場所です。今回は、草を食べるヘビちゃんなど、楽しい要素を追加してプロフィールを魅力的にする方法を紹介します。]]></summary>
+        <content type="html"><![CDATA[<p>GitHubのプロフィールREADMEは、あなたの個性を表現する絶好の場所です。今回は、<strong>草を食べるヘビちゃん</strong>など、楽しい要素を追加してプロフィールを魅力的にする方法を紹介します。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="githubプロフィールreadmeとは">GitHubプロフィールREADMEとは？<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#github%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%ABreadme%E3%81%A8%E3%81%AF" class="hash-link" aria-label="GitHubプロフィールREADMEとは？ への直接リンク" title="GitHubプロフィールREADMEとは？ への直接リンク">​</a></h2>
+<p>GitHubのユーザー名と同じ名前のリポジトリを作成し、そこにREADME.mdを置くと、あなたのプロフィールページに表示されます。これを使って、自己紹介や実績、スキルなどを創造的に表現できます。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="草を食べるヘビちゃんを作ってみよう">草を食べるヘビちゃんを作ってみよう！<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#%E8%8D%89%E3%82%92%E9%A3%9F%E3%81%B9%E3%82%8B%E3%83%98%E3%83%93%E3%81%A1%E3%82%83%E3%82%93%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86" class="hash-link" aria-label="草を食べるヘビちゃんを作ってみよう！ への直接リンク" title="草を食べるヘビちゃんを作ってみよう！ への直接リンク">​</a></h2>
+<p>GitHubの貢献グラフ（通称「草」）を使った面白い実装として、<strong>草を食べるヘビちゃん</strong>があります。これは、あなたのGitHub活動をゲームのスネークゲームのように表示する楽しい機能です。</p>
+<p>実装方法は、こちらの記事で詳しく解説されています：
+<a href="https://qiita.com/Keichan_15/items/7d0595369d6b6e321ede" target="_blank" rel="noopener noreferrer">【GitHub】READMEをオシャレにできるツールたち</a></p>
+<p>ぜひこの記事を見て、あなたのプロフィールにも動く蛇を実装してみてください！きっと訪問者の目を引くこと間違いなしです。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="その他のおもしろいreadme要素">その他のおもしろいREADME要素<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%81%8A%E3%82%82%E3%81%97%E3%82%8D%E3%81%84readme%E8%A6%81%E7%B4%A0" class="hash-link" aria-label="その他のおもしろいREADME要素 への直接リンク" title="その他のおもしろいREADME要素 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-動的な統計情報">1. <strong>動的な統計情報</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#1-%E5%8B%95%E7%9A%84%E3%81%AA%E7%B5%B1%E8%A8%88%E6%83%85%E5%A0%B1" class="hash-link" aria-label="1-動的な統計情報 への直接リンク" title="1-動的な統計情報 への直接リンク">​</a></h3>
+<ul>
+<li>GitHubの統計を自動更新</li>
+<li>使用言語の円グラフ</li>
+<li>貢献度のグラフ</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-訪問者カウンター">2. <strong>訪問者カウンター</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#2-%E8%A8%AA%E5%95%8F%E8%80%85%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC" class="hash-link" aria-label="2-訪問者カウンター への直接リンク" title="2-訪問者カウンター への直接リンク">​</a></h3>
+<ul>
+<li>プロフィールの訪問者数を表示</li>
+<li>レトロなデザインから現代的なものまで</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-最新のブログ記事">3. <strong>最新のブログ記事</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#3-%E6%9C%80%E6%96%B0%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E8%A8%98%E4%BA%8B" class="hash-link" aria-label="3-最新のブログ記事 への直接リンク" title="3-最新のブログ記事 への直接リンク">​</a></h3>
+<ul>
+<li>RSSフィードから自動取得</li>
+<li>GitHub Actionsで定期更新</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-スキルバッジ">4. <strong>スキルバッジ</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#4-%E3%82%B9%E3%82%AD%E3%83%AB%E3%83%90%E3%83%83%E3%82%B8" class="hash-link" aria-label="4-スキルバッジ への直接リンク" title="4-スキルバッジ への直接リンク">​</a></h3>
+<ul>
+<li>技術スタックを視覚的に表示</li>
+<li>カラフルなアイコンで見やすく</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-githubトロフィー">5. <strong>GitHubトロフィー</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#5-github%E3%83%88%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC" class="hash-link" aria-label="5-githubトロフィー への直接リンク" title="5-githubトロフィー への直接リンク">​</a></h3>
+<ul>
+<li>実績を表示</li>
+<li>ゲーミフィケーション要素</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="実装のポイント">実装のポイント<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#%E5%AE%9F%E8%A3%85%E3%81%AE%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88" class="hash-link" aria-label="実装のポイント への直接リンク" title="実装のポイント への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="更新の自動化"><strong>更新の自動化</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#%E6%9B%B4%E6%96%B0%E3%81%AE%E8%87%AA%E5%8B%95%E5%8C%96" class="hash-link" aria-label="更新の自動化 への直接リンク" title="更新の自動化 への直接リンク">​</a></h3>
+<p>GitHub Actionsを活用することで、手動更新の手間を省けます。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="パフォーマンスへの配慮"><strong>パフォーマンスへの配慮</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E3%81%B8%E3%81%AE%E9%85%8D%E6%85%AE" class="hash-link" aria-label="パフォーマンスへの配慮 への直接リンク" title="パフォーマンスへの配慮 への直接リンク">​</a></h3>
+<p>画像やアニメーションは適度に使用し、読み込み速度を意識しましょう。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="モバイル対応"><strong>モバイル対応</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E5%AF%BE%E5%BF%9C" class="hash-link" aria-label="モバイル対応 への直接リンク" title="モバイル対応 への直接リンク">​</a></h3>
+<p>スマートフォンでも見やすいレイアウトを心がけましょう。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="まとめ">まとめ<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#%E3%81%BE%E3%81%A8%E3%82%81" class="hash-link" aria-label="まとめ への直接リンク" title="まとめ への直接リンク">​</a></h2>
+<p>GitHubプロフィールREADMEは、技術的なスキルと創造性を同時にアピールできる素晴らしい機会です。草を食べるヘビちゃんのような楽しい要素を追加することで、訪問者の印象に残るプロフィールを作成できます。</p>
+<p>ぜひ、自分だけのユニークなREADMEを作成して、GitHubをもっと楽しんでみてください！</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考リンク">参考リンク<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/creative-readme#%E5%8F%82%E8%80%83%E3%83%AA%E3%83%B3%E3%82%AF" class="hash-link" aria-label="参考リンク への直接リンク" title="参考リンク への直接リンク">​</a></h2>
+<ul>
+<li><a href="https://qiita.com/Keichan_15/items/7d0595369d6b6e321ede" target="_blank" rel="noopener noreferrer">【GitHub】READMEをオシャレにできるツールたち</a> - 草を食べるヘビちゃんの実装方法も載っています！</li>
+<li><a href="https://docs.github.com/ja/actions" target="_blank" rel="noopener noreferrer">GitHub Actions公式ドキュメント</a></li>
+<li><a href="https://github.com/topics/github-profile-readme" target="_blank" rel="noopener noreferrer">おもしろREADMEのアイデア集</a></li>
+</ul>]]></content>
+        <author>
+            <name>GitHub Workshop Admin</name>
+            <uri>https://github.com/itoksk</uri>
+        </author>
+        <category label="github" term="github"/>
+        <category label="readme" term="readme"/>
+        <category label="profile" term="profile"/>
+        <category label="creative" term="creative"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ライセンスガイドを追加しました！]]></title>
+        <id>https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added</id>
+        <link href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added"/>
+        <updated>2025-07-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHubワークショップに、オープンソースライセンスについて学べる新しいセクションが追加されました。「迷ったらMIT」を合言葉に、初心者でも簡単にライセンスを選べるようになります。]]></summary>
+        <content type="html"><![CDATA[<p>GitHubワークショップに、オープンソースライセンスについて学べる新しいセクションが追加されました。「迷ったらMIT」を合言葉に、初心者でも簡単にライセンスを選べるようになります。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-なぜライセンスガイドが必要">🎯 なぜライセンスガイドが必要？<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#-%E3%81%AA%E3%81%9C%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%82%AC%E3%82%A4%E3%83%89%E3%81%8C%E5%BF%85%E8%A6%81" class="hash-link" aria-label="🎯 なぜライセンスガイドが必要？ への直接リンク" title="🎯 なぜライセンスガイドが必要？ への直接リンク">​</a></h2>
+<p>GitHubでコードを公開する際、多くの初心者が「ライセンスって何？」「どれを選べばいいの？」と悩みます。そんな疑問に答えるため、わかりやすいライセンスガイドを作成しました。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-ガイドの内容">📚 ガイドの内容<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#-%E3%82%AC%E3%82%A4%E3%83%89%E3%81%AE%E5%86%85%E5%AE%B9" class="hash-link" aria-label="📚 ガイドの内容 への直接リンク" title="📚 ガイドの内容 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-ライセンスの基礎知識">1. <strong>ライセンスの基礎知識</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#1-%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98" class="hash-link" aria-label="1-ライセンスの基礎知識 への直接リンク" title="1-ライセンスの基礎知識 への直接リンク">​</a></h3>
+<ul>
+<li>そもそもライセンスとは何か</li>
+<li>なぜライセンスが必要なのか</li>
+<li>ライセンスがないとどうなるか</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-かんたん選択ガイド">2. <strong>かんたん選択ガイド</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#2-%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E9%81%B8%E6%8A%9E%E3%82%AC%E3%82%A4%E3%83%89" class="hash-link" aria-label="2-かんたん選択ガイド への直接リンク" title="2-かんたん選択ガイド への直接リンク">​</a></h3>
+<ul>
+<li>🌟 <strong>初心者の鉄則：「迷ったらMIT」</strong></li>
+<li>3ステップで選べるシンプルな方法</li>
+<li>プロジェクト別のおすすめライセンス</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-ライセンスの追加方法">3. <strong>ライセンスの追加方法</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#3-%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0%E6%96%B9%E6%B3%95" class="hash-link" aria-label="3-ライセンスの追加方法 への直接リンク" title="3-ライセンスの追加方法 への直接リンク">​</a></h3>
+<ul>
+<li>GitHubでの追加手順（画面付き）</li>
+<li>新規リポジトリでの設定</li>
+<li>既存リポジトリへの追加</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-主要ライセンスの詳細">4. <strong>主要ライセンスの詳細</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#4-%E4%B8%BB%E8%A6%81%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E8%A9%B3%E7%B4%B0" class="hash-link" aria-label="4-主要ライセンスの詳細 への直接リンク" title="4-主要ライセンスの詳細 への直接リンク">​</a></h3>
+<ul>
+<li><strong>MIT</strong> - 一番かんたんで自由</li>
+<li><strong>Apache 2.0</strong> - 企業も安心</li>
+<li><strong>GPL v3</strong> - オープンソースを守る</li>
+<li><strong>Creative Commons</strong> - 文書や画像用</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-教育現場向けガイド">5. <strong>教育現場向けガイド</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#5-%E6%95%99%E8%82%B2%E7%8F%BE%E5%A0%B4%E5%90%91%E3%81%91%E3%82%AC%E3%82%A4%E3%83%89" class="hash-link" aria-label="5-教育現場向けガイド への直接リンク" title="5-教育現場向けガイド への直接リンク">​</a></h3>
+<ul>
+<li>授業での活用方法</li>
+<li>学生プロジェクトでの注意点</li>
+<li>実際の授業例</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-特徴">🌈 特徴<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#-%E7%89%B9%E5%BE%B4" class="hash-link" aria-label="🌈 特徴 への直接リンク" title="🌈 特徴 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="わかりやすさを重視">わかりやすさを重視<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#%E3%82%8F%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%95%E3%82%92%E9%87%8D%E8%A6%96" class="hash-link" aria-label="わかりやすさを重視 への直接リンク" title="わかりやすさを重視 への直接リンク">​</a></h3>
+<ul>
+<li>専門用語を避けた説明</li>
+<li>図やグラフを使わないシンプルな構成</li>
+<li>実例を豊富に掲載</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="実践的な内容">実践的な内容<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#%E5%AE%9F%E8%B7%B5%E7%9A%84%E3%81%AA%E5%86%85%E5%AE%B9" class="hash-link" aria-label="実践的な内容 への直接リンク" title="実践的な内容 への直接リンク">​</a></h3>
+<ul>
+<li>よくある質問と回答</li>
+<li>チェックリスト付き</li>
+<li>間違いやすいポイントの解説</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-こんな方におすすめ">👥 こんな方におすすめ<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#-%E3%81%93%E3%82%93%E3%81%AA%E6%96%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81" class="hash-link" aria-label="👥 こんな方におすすめ への直接リンク" title="👥 こんな方におすすめ への直接リンク">​</a></h2>
+<ul>
+<li>GitHubを始めたばかりの初心者</li>
+<li>学生や趣味でプログラミングをしている方</li>
+<li>生徒にライセンスを教えたい先生</li>
+<li>オープンソースに貢献したい方</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-今すぐチェック">🚀 今すぐチェック！<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#-%E4%BB%8A%E3%81%99%E3%81%90%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF" class="hash-link" aria-label="🚀 今すぐチェック！ への直接リンク" title="🚀 今すぐチェック！ への直接リンク">​</a></h2>
+<p>ライセンスガイドは<a href="https://moshimoshipandasan.github.io/GitHub-demo/docs/license/intro">こちら</a>からアクセスできます。</p>
+<p>最初のページでは「迷ったらMIT」という基本方針を説明し、その後で詳しい内容を学べるようになっています。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-覚えておきたいポイント">💡 覚えておきたいポイント<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/license-guide-added#-%E8%A6%9A%E3%81%88%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88" class="hash-link" aria-label="💡 覚えておきたいポイント への直接リンク" title="💡 覚えておきたいポイント への直接リンク">​</a></h2>
+<ol>
+<li><strong>ライセンスなし = 誰も使えない</strong></li>
+<li><strong>迷ったらMITライセンス</strong></li>
+<li><strong>後から変更も可能</strong></li>
+</ol>
+<hr>
+<p>オープンソースの世界への第一歩を、適切なライセンス選択から始めましょう！ご質問やフィードバックがありましたら、ぜひお聞かせください。📝✨</p>]]></content>
+        <author>
+            <name>GitHub Workshop Admin</name>
+            <uri>https://github.com/itoksk</uri>
+        </author>
+        <category label="お知らせ" term="お知らせ"/>
+        <category label="ライセンス" term="ライセンス"/>
+        <category label="新機能" term="新機能"/>
+        <category label="教育" term="教育"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[テトリスワークショップを追加しました！]]></title>
+        <id>https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added</id>
+        <link href="https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added"/>
+        <updated>2025-07-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHubワークショップに、楽しく学べる新しいコンテンツが加わりました。手の動きでテトリスを操作できる、革新的なプログラミング教材です。]]></summary>
+        <content type="html"><![CDATA[<p>GitHubワークショップに、楽しく学べる新しいコンテンツが加わりました。手の動きでテトリスを操作できる、革新的なプログラミング教材です。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-テトリスワークショップとは">🚀 テトリスワークショップとは？<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added#-%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%81%A8%E3%81%AF" class="hash-link" aria-label="🚀 テトリスワークショップとは？ への直接リンク" title="🚀 テトリスワークショップとは？ への直接リンク">​</a></h2>
+<p>MediaPipeを使った手のジェスチャー認識でテトリスを操作する、インタラクティブなプログラミング学習教材です。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="主な特徴">主な特徴<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added#%E4%B8%BB%E3%81%AA%E7%89%B9%E5%BE%B4" class="hash-link" aria-label="主な特徴 への直接リンク" title="主な特徴 への直接リンク">​</a></h3>
+<ul>
+<li><strong>👋 手の動きで操作</strong> - キーボード不要！カメラに向かって手を動かすだけ</li>
+<li><strong>🎯 段階的な学習</strong> - 初心者から上級者まで対応した演習問題</li>
+<li><strong>🔧 カスタマイズ可能</strong> - ジェスチャーや動作を自由に変更できる</li>
+<li><strong>☁️ Codespaces対応</strong> - インストール不要ですぐに始められる</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-学習内容">📚 学習内容<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added#-%E5%AD%A6%E7%BF%92%E5%86%85%E5%AE%B9" class="hash-link" aria-label="📚 学習内容 への直接リンク" title="📚 学習内容 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-基本操作の習得">1. <strong>基本操作の習得</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added#1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E3%81%AE%E7%BF%92%E5%BE%97" class="hash-link" aria-label="1-基本操作の習得 への直接リンク" title="1-基本操作の習得 への直接リンク">​</a></h3>
+<ul>
+<li>手のひらでブロックを左右に移動</li>
+<li>指でブロックを回転</li>
+<li>グーで高速落下</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-プログラミング演習">2. <strong>プログラミング演習</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added#2-%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E6%BC%94%E7%BF%92" class="hash-link" aria-label="2-プログラミング演習 への直接リンク" title="2-プログラミング演習 への直接リンク">​</a></h3>
+<ul>
+<li>難易度別の改造課題（初級・中級・上級）</li>
+<li>スコア表示やレベルシステムの実装</li>
+<li>新しいブロックの追加</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-ジェスチャーカスタマイズ">3. <strong>ジェスチャーカスタマイズ</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added#3-%E3%82%B8%E3%82%A7%E3%82%B9%E3%83%81%E3%83%A3%E3%83%BC%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA" class="hash-link" aria-label="3-ジェスチャーカスタマイズ への直接リンク" title="3-ジェスチャーカスタマイズ への直接リンク">​</a></h3>
+<ul>
+<li>MediaPipeの仕組みを理解</li>
+<li>オリジナルジェスチャーの作成</li>
+<li>認識精度の向上</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-こんな方におすすめ">🌟 こんな方におすすめ<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added#-%E3%81%93%E3%82%93%E3%81%AA%E6%96%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81" class="hash-link" aria-label="🌟 こんな方におすすめ への直接リンク" title="🌟 こんな方におすすめ への直接リンク">​</a></h2>
+<ul>
+<li>プログラミングを楽しく学びたい初心者</li>
+<li>JavaScriptの実践的な使い方を身につけたい方</li>
+<li>画像認識・機械学習に興味がある方</li>
+<li>授業で使える新しい教材を探している先生</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-今すぐ始めよう">🎯 今すぐ始めよう！<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/tetris-workshop-added#-%E4%BB%8A%E3%81%99%E3%81%90%E5%A7%8B%E3%82%81%E3%82%88%E3%81%86" class="hash-link" aria-label="🎯 今すぐ始めよう！ への直接リンク" title="🎯 今すぐ始めよう！ への直接リンク">​</a></h2>
+<p>ワークショップは<a href="https://moshimoshipandasan.github.io/GitHub-demo/docs/tetris-workshop/intro">こちら</a>からアクセスできます。</p>
+<p>GitHub Codespacesを使えば、ブラウザだけですぐに始められます。必要なのはGitHubアカウントとWebカメラだけ！</p>
+<hr>
+<p>皆さんのフィードバックをお待ちしています。楽しみながらプログラミングスキルを向上させましょう！🎮✨</p>]]></content>
+        <author>
+            <name>GitHub Workshop Admin</name>
+            <uri>https://github.com/itoksk</uri>
+        </author>
+        <category label="お知らせ" term="お知らせ"/>
+        <category label="ワークショップ" term="ワークショップ"/>
+        <category label="新機能" term="新機能"/>
+        <category label="プログラミング" term="プログラミング"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub実践ワークショップサイトをリリースしました！]]></title>
+        <id>https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch</id>
+        <link href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch"/>
+        <updated>2025-07-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[本日、中高生向けのGitHub実践ワークショップサイトを正式にリリースしました。このサイトは、GitHubの基本から応用まで、実践的に学べるワークショップ形式の教材を提供しています。]]></summary>
+        <content type="html"><![CDATA[<p>本日、中高生向けのGitHub実践ワークショップサイトを正式にリリースしました。このサイトは、GitHubの基本から応用まで、実践的に学べるワークショップ形式の教材を提供しています。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-主な特徴">🚀 主な特徴<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#-%E4%B8%BB%E3%81%AA%E7%89%B9%E5%BE%B4" class="hash-link" aria-label="🚀 主な特徴 への直接リンク" title="🚀 主な特徴 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-完全ブラウザベースの学習環境">1. <strong>完全ブラウザベースの学習環境</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#1-%E5%AE%8C%E5%85%A8%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E5%AD%A6%E7%BF%92%E7%92%B0%E5%A2%83" class="hash-link" aria-label="1-完全ブラウザベースの学習環境 への直接リンク" title="1-完全ブラウザベースの学習環境 への直接リンク">​</a></h3>
+<ul>
+<li>OSに依存しない学習体験</li>
+<li>github.dev（ブラウザ版VSCode）を活用</li>
+<li>インストール不要ですぐに始められる</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-実践重視のカリキュラム">2. <strong>実践重視のカリキュラム</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#2-%E5%AE%9F%E8%B7%B5%E9%87%8D%E8%A6%96%E3%81%AE%E3%82%AB%E3%83%AA%E3%82%AD%E3%83%A5%E3%83%A9%E3%83%A0" class="hash-link" aria-label="2-実践重視のカリキュラム への直接リンク" title="2-実践重視のカリキュラム への直接リンク">​</a></h3>
+<ul>
+<li>説明20%、実践80%の構成</li>
+<li>6日間の基礎編 + 3日間の応用編</li>
+<li>段階的に難易度が上がる設計</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-楽しく学べるコンテンツ">3. <strong>楽しく学べるコンテンツ</strong><a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#3-%E6%A5%BD%E3%81%97%E3%81%8F%E5%AD%A6%E3%81%B9%E3%82%8B%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84" class="hash-link" aria-label="3-楽しく学べるコンテンツ への直接リンク" title="3-楽しく学べるコンテンツ への直接リンク">​</a></h3>
+<ul>
+<li>Day 3: プロフィールREADME作成</li>
+<li>バッジやGIFアニメーションで個性的なプロフィール作り</li>
+<li>実際に動くWebサイトの作成体験</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-カリキュラム構成">📚 カリキュラム構成<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#-%E3%82%AB%E3%83%AA%E3%82%AD%E3%83%A5%E3%83%A9%E3%83%A0%E6%A7%8B%E6%88%90" class="hash-link" aria-label="📚 カリキュラム構成 への直接リンク" title="📚 カリキュラム構成 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="基礎編6日間">基礎編（6日間）<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#%E5%9F%BA%E7%A4%8E%E7%B7%A86%E6%97%A5%E9%96%93" class="hash-link" aria-label="基礎編（6日間） への直接リンク" title="基礎編（6日間） への直接リンク">​</a></h3>
+<ol>
+<li><strong>Day 1</strong>: GitHubアカウント作成とGitHub Pages</li>
+<li><strong>Day 2</strong>: Markdownとgit基本操作</li>
+<li><strong>Day 3</strong>: プロフィールREADME作成</li>
+<li><strong>Day 4</strong>: ブラウザ版VSCodeの活用</li>
+<li><strong>Day 5</strong>: ブランチとプルリクエスト</li>
+<li><strong>Day 6</strong>: GitHub Classroom体験</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="応用編3日間">応用編（3日間）<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#%E5%BF%9C%E7%94%A8%E7%B7%A83%E6%97%A5%E9%96%93" class="hash-link" aria-label="応用編（3日間） への直接リンク" title="応用編（3日間） への直接リンク">​</a></h3>
+<ol>
+<li><strong>Advanced 1</strong>: Google Apps Script入門</li>
+<li><strong>Advanced 2</strong>: GitHub Classroom（講師視点）</li>
+<li><strong>Advanced 3</strong>: GitHub活用テクニック</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-技術スタック">🛠 技術スタック<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#-%E6%8A%80%E8%A1%93%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF" class="hash-link" aria-label="🛠 技術スタック への直接リンク" title="🛠 技術スタック への直接リンク">​</a></h2>
+<p>このサイトは以下の技術を使用して構築されています：</p>
+<ul>
+<li><strong>Pteranodon</strong> (Docusaurus v3ベース)</li>
+<li><strong>GitHub Pages</strong> でホスティング</li>
+<li><strong>GitHub Actions</strong> で自動デプロイ</li>
+<li><strong>React</strong> コンポーネントでカスタマイズ</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-新しいロゴデザイン">🐺 新しいロゴデザイン<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#-%E6%96%B0%E3%81%97%E3%81%84%E3%83%AD%E3%82%B4%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3" class="hash-link" aria-label="🐺 新しいロゴデザイン への直接リンク" title="🐺 新しいロゴデザイン への直接リンク">​</a></h2>
+<p>サイトのロゴを狼をモチーフにしたデザインに刷新しました。狼は群れで協力して生きる動物として、GitHubでの協働作業を象徴しています。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-対象者">🎯 対象者<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#-%E5%AF%BE%E8%B1%A1%E8%80%85" class="hash-link" aria-label="🎯 対象者 への直接リンク" title="🎯 対象者 への直接リンク">​</a></h2>
+<ul>
+<li>プログラミングを始めたい中高生</li>
+<li>GitHubを授業で活用したい先生</li>
+<li>Google Apps Script（GAS）を使っている先生</li>
+<li>チーム開発を学びたい初心者</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-充実したリソース">📝 充実したリソース<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#-%E5%85%85%E5%AE%9F%E3%81%97%E3%81%9F%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9" class="hash-link" aria-label="📝 充実したリソース への直接リンク" title="📝 充実したリソース への直接リンク">​</a></h2>
+<ul>
+<li><strong>トラブルシューティングガイド</strong>: よくある問題と解決方法</li>
+<li><strong>用語集</strong>: Git/GitHub関連用語をわかりやすく解説</li>
+<li><strong>講師向けガイド</strong>: 授業での活用方法</li>
+<li><strong>テンプレート集</strong>: すぐに使えるサンプルコード</li>
+<li><strong>開発ガイド</strong>: ワークショップのカスタマイズ方法</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-アクセス方法">🔗 アクセス方法<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%96%B9%E6%B3%95" class="hash-link" aria-label="🔗 アクセス方法 への直接リンク" title="🔗 アクセス方法 への直接リンク">​</a></h2>
+<p>ワークショップサイトはこちらからアクセスできます：
+<a href="https://itoksk.github.io/GitHub-demo/" target="_blank" rel="noopener noreferrer">https://itoksk.github.io/GitHub-demo/</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-貢献について">🤝 貢献について<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#-%E8%B2%A2%E7%8C%AE%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" class="hash-link" aria-label="🤝 貢献について への直接リンク" title="🤝 貢献について への直接リンク">​</a></h2>
+<p>このプロジェクトはオープンソースです。改善提案やバグ報告は<a href="https://github.com/itoksk/GitHub-demo" target="_blank" rel="noopener noreferrer">GitHubリポジトリ</a>のIssuesまでお願いします。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-謝辞">🙏 謝辞<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/workshop-launch#-%E8%AC%9D%E8%BE%9E" class="hash-link" aria-label="🙏 謝辞 への直接リンク" title="🙏 謝辞 への直接リンク">​</a></h2>
+<p>このワークショップサイトの開発にあたり、多くの参考資料とフィードバックをいただきました。特に、実際の教育現場でのニーズを反映させることができました。</p>
+<hr>
+<p>ぜひ、このワークショップを通じて、多くの方がGitHubの楽しさと可能性を発見していただければ幸いです！</p>]]></content>
+        <author>
+            <name>Workshop Team</name>
+            <uri>https://github.com/itoksk</uri>
+        </author>
+        <category label="github" term="github"/>
+        <category label="workshop" term="workshop"/>
+        <category label="docusaurus" term="docusaurus"/>
+        <category label="pteranodon" term="pteranodon"/>
+        <category label="release" term="release"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Workshop Wikiへようこそ]]></title>
+        <id>https://moshimoshipandasan.github.io/GitHub-demo/blog/welcome</id>
+        <link href="https://moshimoshipandasan.github.io/GitHub-demo/blog/welcome"/>
+        <updated>2025-01-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHub実践ワークショップのWikiサイトを公開しました。]]></summary>
+        <content type="html"><![CDATA[<p>GitHub実践ワークショップのWikiサイトを公開しました。</p>
+<p>このサイトでは、GitHubの基本的な使い方から応用的な活用方法まで、段階的に学べるコンテンツを提供しています。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主なコンテンツ">主なコンテンツ<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/welcome#%E4%B8%BB%E3%81%AA%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84" class="hash-link" aria-label="主なコンテンツ への直接リンク" title="主なコンテンツ への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="基礎編day-1-6">基礎編（Day 1-6）<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/welcome#%E5%9F%BA%E7%A4%8E%E7%B7%A8day-1-6" class="hash-link" aria-label="基礎編（Day 1-6） への直接リンク" title="基礎編（Day 1-6） への直接リンク">​</a></h3>
+<ul>
+<li>GitHubアカウントの作成</li>
+<li>基本的な操作方法</li>
+<li>プロフィールREADMEの作成</li>
+<li>github.devの活用</li>
+<li>ブランチとプルリクエスト</li>
+<li>GitHub Classroom体験</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="応用編">応用編<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/welcome#%E5%BF%9C%E7%94%A8%E7%B7%A8" class="hash-link" aria-label="応用編 への直接リンク" title="応用編 への直接リンク">​</a></h3>
+<ul>
+<li>Google Apps Script連携</li>
+<li>GitHub Classroom講師体験</li>
+<li>GitHub活用テクニック</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="今後の予定">今後の予定<a href="https://moshimoshipandasan.github.io/GitHub-demo/blog/welcome#%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A" class="hash-link" aria-label="今後の予定 への直接リンク" title="今後の予定 への直接リンク">​</a></h2>
+<p>定期的にコンテンツを更新し、より充実したワークショップ資料を提供していく予定です。</p>
+<p>ぜひご活用ください！</p>]]></content>
+        <author>
+            <name>Workshop Team</name>
+            <uri>https://github.com/itoksk</uri>
+        </author>
+        <category label="お知らせ" term="お知らせ"/>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+</feed>

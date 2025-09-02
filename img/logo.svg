@@ -1,0 +1,65 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#1a1a1a"/>
+  <circle cx="100" cy="100" r="85" fill="#2e8555"/>
+  
+  <!-- Wolf silhouette -->
+  <g transform="translate(100, 100)">
+    <!-- Wolf head -->
+    <path d="M -40 -20 
+             L -45 -35 
+             L -40 -45 
+             L -30 -40
+             L -20 -45
+             L -10 -50
+             L 0 -48
+             L 10 -50
+             L 20 -45
+             L 30 -40
+             L 40 -45
+             L 45 -35
+             L 40 -20
+             L 35 -10
+             L 30 0
+             L 20 10
+             L 10 15
+             L 0 18
+             L -10 15
+             L -20 10
+             L -30 0
+             L -35 -10
+             Z" 
+          fill="#ffffff"/>
+    
+    <!-- Wolf ears -->
+    <path d="M -30 -40 L -35 -55 L -25 -50 Z" fill="#ffffff"/>
+    <path d="M 30 -40 L 35 -55 L 25 -50 Z" fill="#ffffff"/>
+    
+    <!-- Inner ears -->
+    <path d="M -30 -45 L -32 -50 L -27 -48 Z" fill="#1a1a1a"/>
+    <path d="M 30 -45 L 32 -50 L 27 -48 Z" fill="#1a1a1a"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="-15" cy="-15" rx="6" ry="8" fill="#1a1a1a"/>
+    <ellipse cx="15" cy="-15" rx="6" ry="8" fill="#1a1a1a"/>
+    <circle cx="-13" cy="-17" r="2" fill="#25c2a0"/>
+    <circle cx="17" cy="-17" r="2" fill="#25c2a0"/>
+    
+    <!-- Nose -->
+    <path d="M -5 -5 L 0 0 L 5 -5 Z" fill="#1a1a1a"/>
+    
+    <!-- Mouth/Muzzle -->
+    <path d="M 0 0 Q -8 5 -12 8" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+    <path d="M 0 0 Q 8 5 12 8" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+    
+    <!-- Fur texture -->
+    <path d="M -35 -10 Q -38 -5 -35 0" stroke="#e0e0e0" stroke-width="1" fill="none"/>
+    <path d="M 35 -10 Q 38 -5 35 0" stroke="#e0e0e0" stroke-width="1" fill="none"/>
+    <path d="M -25 10 Q -28 12 -25 15" stroke="#e0e0e0" stroke-width="1" fill="none"/>
+    <path d="M 25 10 Q 28 12 25 15" stroke="#e0e0e0" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">GitHub Wolf</text>
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#25c2a0">Workshop</text>
+</svg>
