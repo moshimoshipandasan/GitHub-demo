@@ -26,6 +26,7 @@ const sidebars = {
         'basics/day4',
         'basics/day5',
         'basics/day6',
+        'basics/day7',
       ],
     },
     {
@@ -36,6 +37,7 @@ const sidebars = {
         'advanced/clasp-guide',
         'advanced/classroom-teacher',
         'advanced/github-tips',
+        'advanced/python-intro',
       ],
     },
     {
