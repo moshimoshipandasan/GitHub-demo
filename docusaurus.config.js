@@ -14,14 +14,14 @@ const config = {
   trailingSlash: false,
 
   // Set the production url of your site here
-  url: 'https://itoksk.github.io',
+  url: 'https://moshimoshipandasan.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/GitHub-demo/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'itoksk', // Usually your GitHub org/user name.
+  organizationName: 'moshimoshipandasan', // Usually your GitHub org/user name.
   projectName: 'GitHub-demo', // Usually your repo name.
 
   onBrokenLinks: 'warn',
